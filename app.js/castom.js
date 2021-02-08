@@ -34,7 +34,7 @@ const displayMealDetails = meal => {
     mealDiv.className ='col-lg-6 mx-auto';
 
     const foodInfo =`
-      <img class="img-fluid" src='${meal.strMealThumb}'/>
+      <img class="img-fluid img" src='${meal.strMealThumb}'/>
       <h1>${meal.strMeal}</h1>
     `
     foods.innerHTML = foodInfo;
