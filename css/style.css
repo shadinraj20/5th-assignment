@@ -11,7 +11,3 @@ body{
     
 }
 
-.display-item{
-    display: flex;
-    flex-direction: column;
-}
