@@ -19,7 +19,6 @@ const displayMeal = meals => {
         <img class="img-fluid img" src='${meal.strMealThumb}'/>
         <h4>${meal.strMeal}</h4>
         </a>
-
     `
     mealDiv.innerHTML = foodInfo;
     foods.appendChild(mealDiv);
@@ -32,11 +31,16 @@ const displayMealDetails = meal => {
 
   
   const mealDiv = document.createElement('div');
-    mealDiv.className ='col-lg-6 mx-auto';
+    mealDiv.className ='col-lg-6 mx-auto`';
 
     const foodInfo =`
       <img class="img-fluid img" src='${meal.strMealThumb}'/>
       <h1>${meal.strMeal}</h1> 
+        <li>${meal.strIngredient1}</li>
+        <li>${meal.strIngredient2}</li>
+        <li>${meal.strIngredient3}</li>
+        <li>${meal.strIngredient4}</li>
+        <li>${meal.strIngredient5}</li>
        
     `
     foods.innerHTML = foodInfo;
