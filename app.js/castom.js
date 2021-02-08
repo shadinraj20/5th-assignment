@@ -16,9 +16,10 @@ const displayMeal = meals => {
 
     const foodInfo =`
       <a href='index.html?meal=${meal.idMeal}'>
-        <img class="img-fluid" src='${meal.strMealThumb}'/>
+        <img class="img-fluid img" src='${meal.strMealThumb}'/>
         <h4>${meal.strMeal}</h4>
-      </a>
+        </a>
+
     `
     mealDiv.innerHTML = foodInfo;
     foods.appendChild(mealDiv);
@@ -35,7 +36,8 @@ const displayMealDetails = meal => {
 
     const foodInfo =`
       <img class="img-fluid img" src='${meal.strMealThumb}'/>
-      <h1>${meal.strMeal}</h1>
+      <h1>${meal.strMeal}</h1> 
+       
     `
     foods.innerHTML = foodInfo;
 }
