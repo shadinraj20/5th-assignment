@@ -10,3 +10,8 @@ body{
     border-radius: 10px;
     
 }
+
+.display-item{
+    display: flex;
+    flex-direction: column;
+}

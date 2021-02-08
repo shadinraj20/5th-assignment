@@ -12,7 +12,7 @@ const displayMeal = meals => {
   
   meals.map(meal => {
     const mealDiv = document.createElement('div');
-    mealDiv.className ='col-lg-3';
+    mealDiv.className ='col-lg-3 mt-5';
 
     const foodInfo =`
       <a href='index.html?meal=${meal.idMeal}'>
@@ -31,17 +31,20 @@ const displayMealDetails = meal => {
 
   
   const mealDiv = document.createElement('div');
-    mealDiv.className ='col-lg-6 mx-auto`';
+    mealDiv.className ='col-lg-6 mx-auto';
 
     const foodInfo =`
+    <div>
       <img class="img-fluid img" src='${meal.strMealThumb}'/>
-      <h1>${meal.strMeal}</h1> 
-        <li>${meal.strIngredient1}</li>
-        <li>${meal.strIngredient2}</li>
-        <li>${meal.strIngredient3}</li>
-        <li>${meal.strIngredient4}</li>
-        <li>${meal.strIngredient5}</li>
-       
+      <h1>${meal.strMeal}</h1>
+      <ul> 
+      <li>${meal.strIngredient1}</li>
+      <li>${meal.strIngredient2}</li>
+      <li>${meal.strIngredient3}</li>
+      <li>${meal.strIngredient4}</li>
+      <li>${meal.strIngredient5}</li>
+       </ul>
+       </div>
     `
     foods.innerHTML = foodInfo;
 }
